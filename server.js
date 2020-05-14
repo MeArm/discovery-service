@@ -186,8 +186,11 @@ var DiscoveryApp = function() {
     self.app = express();
 
     self.app.set('trust proxy', true);
+<<<<<<< HEAD
     self.app.use(express.static('assets'));
     self.app.use(cors());
+=======
+>>>>>>> parent of 13839c9... Style the page and make it work properly
 
     //  Add handlers for the app (from the routes).
     self.app.post('/', function(req, res){ self.addAddress(req, res)});
